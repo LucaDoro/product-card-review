@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-blue: hsl(212, 21%, 14%);
+  --dark-gray-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --font-size: 14px;
+  --font: 'Montserrat';
+  --font2: 'Fraunces';
+  --font-size: 14px;
+}
+
+body {
+  background-color: var(--cream);
+  height:100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  display: flex;
+  height: 320px;
+}
+
+img {
+  max-height: 320px;
+  border-radius: 10px 0 0 10px;
+}
+
+.flexbox {
+  max-height: auto;
+  max-width: auto;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 10px 10px 0;
+}
+
+.content {
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.perfume-name {
+  line-height: 1.5rem;
+}
+
+h4, 
+.perfume-name, 
+.description, 
+.prices,
+.button {
+  margin-bottom: 15px;
+}
+
+h4 {
+font-size: 0.5rem;
+font-family: var(--font);
+font-weight: 300;
+letter-spacing: 0.5em;
+color: var(--dark-gray-blue)
+}
+
+.price, 
+.initial-price,
+.perfume-name {
+  font-size: 1.5rem;
+  font-family: var(--font2)
+}
+
+.description {
+  font-size: 0.6rem;
+  line-height: 1rem;
+  font-family:var(--font);
+  color: var(--dark-gray-blue);
+  flex-wrap: wrap;
+}
+
+.price{
+  margin-right: 1rem;
+}
+
+.initial-price {
+  font-size: 0.5rem;
+  align-self: center;
+  text-decoration:line-through;
+  color: var(--dark-gray-blue)
+}
+
+.prices {
+  display: flex;
+}
+
+.price {
+  color: var(--dark-cyan);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  border-style: none;
+  border-radius: 10px;
+  background-color: var(--dark-cyan);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  padding: 10px 35px;
+  margin-right: 1.5rem;
+  color: var(--white);
+}
+
+.icon {
+  margin-right: 1rem
+}
+
+.add-to-cart {
+  font-size: 0.7rem;
+}
